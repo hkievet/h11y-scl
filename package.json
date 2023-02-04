@@ -9,7 +9,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"publish": "npm version minor && svelte-package && npm publish ./package"
+		"publish": "npm version patch && svelte-package && npm publish ./package"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
