@@ -15,5 +15,5 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/svelte/writing-stories/args
 export const Primary: Story = {
-	args: {}
+	args: { label: 'Click Me' }
 };
