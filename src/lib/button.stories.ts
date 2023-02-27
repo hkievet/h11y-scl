@@ -17,3 +17,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
 	args: { label: 'Click Me' }
 };
+
+export const Large: Story = {
+	args: { label: 'Click Me', type: 'large' }
+};
