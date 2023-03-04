@@ -1,5 +1,4 @@
 <script lang="ts">
-	export let label: string = '';
 	export let type: 'large' | 'normal' = 'normal';
 
 	import { createEventDispatcher } from 'svelte';
@@ -10,9 +9,9 @@
 </script>
 
 {#if type === 'large'}
-	<button class="large-btn" on:click={onClick}>{label}</button>
+	<button class="large-btn" on:click={onClick}><slot /></button>
 {:else}
-	<button class="normal-btn" on:click={onClick}>{label}</button>
+	<button class="normal-btn" on:click={onClick}><slot /></button>
 {/if}
 
 <style lang="postcss">
