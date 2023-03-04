@@ -12,7 +12,8 @@
     "publish": "npm version patch && svelte-package && npm publish ./package",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "sb-init": "storybook init -f"
+    "sb-init": "storybook init -f",
+    "clean": "rimraf .svelte-kit"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

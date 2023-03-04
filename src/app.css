@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'RobotoFlex';
+	/* https://v-fonts.com/ . */
+	src: url('/fonts/RobotoFlex.ttf') format('truetype');
+	font-variation-settings: 'wght' 700;
+	font-variation-settings: 'wdth' 200;
+	font-variation-settings: 'opsz' 20;
+	font-variation-settings: 'GRAD' -50;
+	font-variation-settings: 'slnt' -9;
+	/* font-variation-settings: 'XTRA' 400; */
+	/* font-variation-settings: 'XOPQ' 27; */
+	/* font-variation-settings: 'YOPQ' 135; */
+	/* font-variation-settings: 'YTLC' 416; */
+	/* font-variation-settings: 'YTUC' 600; */
+	/* font-variation-settings: 'YTAS' 853; */
+	/* font-variation-settings: 'YTDE' -98; */
+	/* font-variation-settings: 'YTFI' 787; */
+}
