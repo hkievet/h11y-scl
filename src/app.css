@@ -6,17 +6,16 @@
 	font-family: 'RobotoFlex';
 	/* https://v-fonts.com/ . */
 	src: url('/fonts/RobotoFlex.ttf') format('truetype');
-	font-variation-settings: 'wght' 700;
-	font-variation-settings: 'wdth' 200;
-	font-variation-settings: 'opsz' 20;
-	font-variation-settings: 'GRAD' -50;
-	font-variation-settings: 'slnt' -9;
-	/* font-variation-settings: 'XTRA' 400; */
-	/* font-variation-settings: 'XOPQ' 27; */
-	/* font-variation-settings: 'YOPQ' 135; */
-	/* font-variation-settings: 'YTLC' 416; */
-	/* font-variation-settings: 'YTUC' 600; */
-	/* font-variation-settings: 'YTAS' 853; */
-	/* font-variation-settings: 'YTDE' -98; */
-	/* font-variation-settings: 'YTFI' 787; */
+}
+
+.h11y-body-font {
+	font-family: 'RobotoFlex';
+	font-variation-settings: 'GRAD' 53, 'XOPQ' 70, 'XTRA' 400, 'YOPQ' 25, 'YTAS' 100, 'YTDE' -305,
+		'YTFI' 620, 'YTLC' 500, 'YTUC' 637, 'opsz' 23, 'slnt' 0, 'wdth' 132, 'wght' 375;
+}
+
+.h11y-body-font--bold {
+	font-family: 'RobotoFlex';
+	font-variation-settings: 'GRAD' 150, 'XOPQ' 70, 'XTRA' 400, 'YOPQ' 25, 'YTAS' 100, 'YTDE' -305,
+		'YTFI' 620, 'YTLC' 500, 'YTUC' 637, 'opsz' 23, 'slnt' 0, 'wdth' 132, 'wght' 375;
 }
