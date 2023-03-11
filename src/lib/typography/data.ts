@@ -108,3 +108,19 @@ export const bodyFont = {
 	wdth: 132,
 	wght: 375
 };
+
+export const emphasizedBodyFont = {
+	GRAD: 150,
+	XOPQ: 70,
+	XTRA: 400,
+	YOPQ: 25,
+	YTAS: 100,
+	YTDE: -305,
+	YTFI: 620,
+	YTLC: 500,
+	YTUC: 637,
+	opsz: 23,
+	slnt: 0,
+	wdth: 132,
+	wght: 375
+};

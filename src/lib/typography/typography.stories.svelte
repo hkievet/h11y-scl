@@ -2,6 +2,7 @@
 	import { H11YButton, H11YRangeInput } from '$lib';
 	import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
 	import { RoboFlexValues } from './data';
+	import dedent from 'ts-dedent';
 
 	import Typography from './Typography.svelte';
 
@@ -11,8 +12,29 @@
 			'YOPQ' ${YOPQ}, 'YTAS' ${YTAS}, 'YTDE' ${YTDE}, 'YTFI' ${YTFI},
 			'YTLC' ${YTLC}, 'YTUC' ${YTUC}, 'opsz' ${opsz}, 'slnt' ${slnt},
 			'wdth' ${wdth}, 'wght' ${wght};`;
-		console.log(str);
+		navigator.clipboard.writeText(str);
 	}
+	function handleClickPreset() {
+		const str = dedent`
+			const preset = {
+				'GRAD': ${GRAD},
+				'XOPQ': ${XOPQ},
+				'XTRA': ${XTRA},
+				'YOPQ': ${YOPQ},
+				'YTAS': ${YTAS},
+				'YTDE': ${YTDE},
+				'YTFI': ${YTFI},
+				'YTLC': ${YTLC},
+				'YTUC': ${YTUC},
+				'opsz': ${opsz},
+				'slnt': ${slnt},
+				'wdth': ${wdth},
+				'wght': ${wght}
+			}`;
+		navigator.clipboard.writeText(str);
+	}
+
+	const ALLCHARS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345467890!@#$%^&*()';
 
 	let GRAD = RoboFlexValues.GRAD.default;
 	let XOPQ = RoboFlexValues.XOPQ.default;
@@ -57,6 +79,11 @@
 	<Typography tag="h5">h5 tag</Typography>
 	<Typography tag="p">p tag</Typography>
 	<Typography tag="span">span tag</Typography>
+</Story>
+
+<Story name="fontPresets">
+	<Typography tag="p" fontPresets="bodyFont">bodyFont: {ALLCHARS}</Typography>
+	<Typography tag="p" fontPresets="emphasizedBodyFont">emphasizedBodyFont: {ALLCHARS}</Typography>
 </Story>
 
 <Story name="customizer">
@@ -146,7 +173,8 @@
 
 	<Typography
 		fontParams={{ GRAD, XOPQ, XTRA, YOPQ, YTAS, YTDE, YTFI, YTLC, YTUC, opsz, slnt, wdth, wght }}
-		>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345467890!@#$%^&*()</Typography
+		>{ALLCHARS}</Typography
 	>
-	<H11YButton on:click={handleClick}>Print to console</H11YButton>
+	<H11YButton on:click={handleClick}>Copy console as CSS</H11YButton>
+	<H11YButton on:click={handleClickPreset}>Copy as PRESEST</H11YButton>
 </Story>

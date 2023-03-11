@@ -1,9 +1,17 @@
 <script lang="ts">
-	import { bodyFont } from './data';
+	import { bodyFont, emphasizedBodyFont } from './data';
 
 	export let tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span' | 'p' = 'h1';
 
-	export let fontParams: RobotoFlexParams = bodyFont;
+	export let fontPresets: 'bodyFont' | 'emphasizedBodyFont' = 'bodyFont';
+
+	export let fontParams: Partial<RobotoFlexParams> = {};
+
+	if (fontPresets === 'emphasizedBodyFont') {
+		fontParams = { ...emphasizedBodyFont, ...fontParams };
+	} else {
+		fontParams = bodyFont;
+	}
 
 	interface RobotoFlexParams {
 		GRAD: number;
