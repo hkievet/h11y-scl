@@ -1,6 +1,6 @@
 {
   "name": "h11y-slc",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "homepage": "http://hkievet.github.io/h11y-scl",
   "scripts": {
     "dev": "vite dev",
