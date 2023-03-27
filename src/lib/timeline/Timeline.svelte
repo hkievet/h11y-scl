@@ -21,7 +21,7 @@
 	const timelineItems = data.map((e, i) => {
 		const firstDate = eventDates[0];
 		const currentDate = eventDates[i];
-		let percentageBefore = currentDate - firstDate / currentDate;
+		let percentageBefore = (currentDate - firstDate) / totalTimeDelta;
 		if (i === data.length - 1) {
 			return {
 				...e,
