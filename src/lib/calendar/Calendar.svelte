@@ -1,0 +1,3 @@
+<script>
+	let events = [];
+</script>

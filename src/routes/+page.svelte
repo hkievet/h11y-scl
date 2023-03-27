@@ -1,5 +1,10 @@
 <script>
-	import Typography from '$lib/typography/Typography.svelte';
+	import Timeline from '$lib/timeline/Timeline.svelte';
+	import TimelineGrouping from '$lib/timeline/TimelineGrouping.svelte';
+	import TimelineNode from '$lib/timeline/TimelineNode.svelte';
 </script>
 
-<Typography>Foobar</Typography>
+<Timeline>Foobar</Timeline>
+
+<TimelineGrouping />
+<TimelineNode />
