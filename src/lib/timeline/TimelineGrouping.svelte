@@ -5,6 +5,8 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let eventGroups: { date: string; title: string; description: string }[][];
+	export let trackActiveItem = true;
+	export let activeItem: { groupIndex: number; index: number } | null = null;
 	const dispatch = createEventDispatcher();
 
 	eventGroups.forEach((events) => {
@@ -60,6 +62,7 @@
 			if (selectedItem) {
 				console.log(selectedItem);
 				dispatch('select', { item: selectedItem });
+				activeItem = { groupIndex: i, index: e.detail };
 			}
 		}
 	}
@@ -68,6 +71,7 @@
 <div class="timeline-container">
 	{#each eventGroups as events, i}
 		<Timeline
+			activeItem={activeItem && activeItem.groupIndex === i ? activeItem.index : null}
 			data={events}
 			containerWidth={groupWidths[i]}
 			on:select={(e) => {

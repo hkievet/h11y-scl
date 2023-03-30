@@ -6,6 +6,7 @@
 
 	export let data = sampleDataSet;
 	export let containerWidth = 1;
+	export let activeItem: number | null = null;
 
 	const dispatch = createEventDispatcher();
 
@@ -47,7 +48,11 @@
 
 <div class="timeline-container" style:width={`${containerWidth * 100}%`}>
 	{#each timelineItems as event, i}
-		<TimelineNode leftPercentage={event.percentageBefore} on:click={() => onSelect(i)} />
+		<TimelineNode
+			leftPercentage={event.percentageBefore}
+			on:click={() => onSelect(i)}
+			selected={i === activeItem}
+		/>
 		{#if event.percentageAfter}
 			<TimelineDistance widthPercentage={event.percentageAfter} />
 		{/if}

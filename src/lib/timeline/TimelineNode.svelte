@@ -19,7 +19,10 @@
 		position: absolute;
 		width: 24px;
 		height: 24px;
-		background-color: red;
+		border-color: black;
+		background-color: white;
+		border-style: solid;
+		border-width: 2px;
 		border-radius: 12px;
 	}
 	button:hover {
