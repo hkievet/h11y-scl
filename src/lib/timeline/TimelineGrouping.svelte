@@ -2,8 +2,10 @@
 	import { anotherDataSet, sampleDataSet } from './testData';
 	import Timeline from './Timeline.svelte';
 	import TimelineGap from './TimelineGap.svelte';
+	import { createEventDispatcher } from 'svelte';
 
-	const eventGroups = [sampleDataSet, anotherDataSet];
+	export let eventGroups: { date: string; title: string; description: string }[][];
+	const dispatch = createEventDispatcher();
 
 	eventGroups.forEach((events) => {
 		events.sort((a, b) => {
@@ -51,12 +53,13 @@
 		return (events.length / totalEvents) * totalWidthAfterGap;
 	});
 
-	function onSelecte(e: Partial<{ detail: number }>, i: any) {
+	function onSelect(e: Partial<{ detail: number }>, i: any) {
 		const selectedGroup = eventGroups[i];
 		if (e.detail !== undefined && e.detail <= selectedGroup.length) {
 			const selectedItem = selectedGroup[e.detail];
 			if (selectedItem) {
 				console.log(selectedItem);
+				dispatch('select', { item: selectedItem });
 			}
 		}
 	}
@@ -68,7 +71,7 @@
 			data={events}
 			containerWidth={groupWidths[i]}
 			on:select={(e) => {
-				onSelecte(e, i);
+				onSelect(e, i);
 			}}
 		/>
 		{#if i < eventGroups.length - 1}
