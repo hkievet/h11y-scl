@@ -123,3 +123,76 @@ export const anotherDataSet = [
 		date: '1848-07-19'
 	}
 ];
+
+export const frenchRevolution = [
+	{
+		description:
+			'The Storming of the Bastille, a key event in the French Revolution, which led to the fall of the Bourbon monarchy.',
+		title: 'Storming of the Bastille',
+		date: '1789-07-14',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Storming_of_the_Bastille'
+	},
+
+	{
+		description: 'The execution of King Louis XVI by guillotine during the French Revolution.',
+		title: 'Execution of Louis XVI',
+		date: '1793-01-21',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Execution_of_Louis_XVI'
+	},
+	{
+		description:
+			'The rise of Napoleon Bonaparte to power, marking the end of the French Revolution.',
+		title: "Napoleon's Rise to Power",
+		date: '1799-11-09',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Napoleon'
+	},
+	{
+		description:
+			"The Battle of Waterloo, a decisive battle that ended Napoleon's rule as Emperor of the French.",
+		title: 'Battle of Waterloo',
+		date: '1815-06-18',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Battle_of_Waterloo'
+	},
+	{
+		description:
+			'The July Revolution, which resulted in the overthrow of King Charles X and the establishment of the July Monarchy.',
+		title: 'July Revolution',
+		date: '1830-07-27',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/July_Revolution'
+	},
+	{
+		description:
+			'The construction of the Eiffel Tower, a symbol of France and one of the most recognizable landmarks in the world.',
+		title: 'Eiffel Tower Construction',
+		date: '1887-01-28',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Eiffel_Tower'
+	},
+	{
+		description:
+			'The Dreyfus Affair, a political scandal in which a French Jewish army officer, Alfred Dreyfus, was falsely accused of espionage.',
+		title: 'Dreyfus Affair',
+		date: '1894-12-22',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Dreyfus_affair'
+	},
+	{
+		description:
+			'The opening of the Paris Métro, the rapid transit system in the Paris metropolitan area.',
+		title: 'Opening of the Paris Métro',
+		date: '1900-07-19',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Paris_M%C3%A9tro'
+	},
+	{
+		description:
+			'The signing of the Treaty of Versailles, which formally ended World War I and imposed severe penalties on Germany.',
+		title: 'Treaty of Versailles',
+		date: '1919-06-28',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Treaty_of_Versailles'
+	},
+	{
+		description:
+			'The construction of the Maginot Line, a series of fortifications built along the French-German border.',
+		title: 'Maginot Line Construction',
+		date: '1930-01-01',
+		wikipediaUrl: 'https://en.wikipedia.org/wiki/Maginot_Line'
+	}
+];

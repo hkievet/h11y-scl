@@ -2,13 +2,15 @@
 	import { sampleDataSet } from './testData';
 	import TimelineDistance from './TimelineDistance.svelte';
 	import TimelineNode from './TimelineNode.svelte';
+	import { createEventDispatcher } from 'svelte';
 
 	export let data = sampleDataSet;
 	export let containerWidth = 1;
 
-	interface TimelineEvent {
-		date: string;
-		description: string;
+	const dispatch = createEventDispatcher();
+
+	function onSelect(timeLineEventIndex: number) {
+		dispatch('select', timeLineEventIndex);
 	}
 
 	const eventDates = data.map((e) => {
@@ -18,6 +20,8 @@
 	const totalTimeDelta = eventDates.at(-1)! - eventDates[0];
 
 	let total = 0;
+
+	console.log(eventDates);
 	const timelineItems = data.map((e, i) => {
 		const firstDate = eventDates[0];
 		const currentDate = eventDates[i];
@@ -42,8 +46,8 @@
 </script>
 
 <div class="timeline-container" style:width={`${containerWidth * 100}%`}>
-	{#each timelineItems as event}
-		<TimelineNode leftPercentage={event.percentageBefore} />
+	{#each timelineItems as event, i}
+		<TimelineNode leftPercentage={event.percentageBefore} on:click={() => onSelect(i)} />
 		{#if event.percentageAfter}
 			<TimelineDistance widthPercentage={event.percentageAfter} />
 		{/if}
