@@ -22,7 +22,6 @@
 
 	let total = 0;
 
-	console.log(eventDates);
 	const timelineItems = data.map((e, i) => {
 		const firstDate = eventDates[0];
 		const currentDate = eventDates[i];
@@ -43,7 +42,6 @@
 			percentageBefore
 		};
 	});
-	console.log(total);
 </script>
 
 <div class="timeline-container" style:width={`${containerWidth * 100}%`}>

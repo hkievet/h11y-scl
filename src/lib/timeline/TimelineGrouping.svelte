@@ -60,7 +60,6 @@
 		if (e.detail !== undefined && e.detail <= selectedGroup.length) {
 			const selectedItem = selectedGroup[e.detail];
 			if (selectedItem) {
-				console.log(selectedItem);
 				dispatch('select', { item: selectedItem });
 				activeItem = { groupIndex: i, index: e.detail };
 			}

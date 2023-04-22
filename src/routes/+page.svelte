@@ -10,7 +10,6 @@
 	function onSelect(e: any) {
 		selectedTimelineItem = e.detail.item;
 	}
-	console.log(selectedTimelineItem);
 </script>
 
 <TimelineGrouping eventGroups={[sampleDataSet]} on:select={onSelect} />
