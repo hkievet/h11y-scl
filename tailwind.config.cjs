@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        h11ydarkblue: '#012F42',
+        h11ylightblue: '#176B8F',
+        h11ypaleyellow: '#8F8917',
         h11yred: "#8F081E",
         h11ywhite: "#F4E5C4",
         h11ybrown: "#89462C",
