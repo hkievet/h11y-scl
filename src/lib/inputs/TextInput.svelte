@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { HTMLInputAttributes } from 'svelte/elements';
+	import type { ChangeEventHandler, HTMLInputAttributes } from 'svelte/elements';
 
 	export let value: string;
 
@@ -9,11 +9,17 @@
 	}
 
 	import { getEventsAction } from './utils.js';
-	import { current_component } from 'svelte/internal';
+	import { createEventDispatcher, current_component } from 'svelte/internal';
 	const events = getEventsAction(current_component);
+
+	const dispatch = createEventDispatcher();
+
+	function onChange(e: KeyboardEvent) {
+		dispatch('change', { value: (e.target as HTMLInputElement).value });
+	}
 </script>
 
-<input class="h11y-input" {...$$restProps} bind:value use:events />
+<input class="h11y-input" {...$$restProps} bind:value use:events on:keyup={onChange} />
 
 <style lang="postcss">
 	.h11y-input {
