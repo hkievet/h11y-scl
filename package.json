@@ -74,5 +74,8 @@
   },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.10.1"
+  }
 }

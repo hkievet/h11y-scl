@@ -2,5 +2,6 @@
 import H11YButton from './button/Button.svelte';
 import H11YTypography from './typography/Typography.svelte';
 import H11YRangeInput from './inputs/RangeInput.svelte';
+import H11YImage from './image/CloudinaryImage.svelte';
 
-export { H11YButton, H11YTypography, H11YRangeInput };
+export { H11YButton, H11YTypography, H11YRangeInput, H11YImage };
