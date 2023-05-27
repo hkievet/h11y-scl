@@ -1,6 +1,6 @@
 {
-  "name": "h11y-slc",
-  "version": "0.1.34",
+  "name": "h11y-scl",
+  "version": "0.1.0",
   "homepage": "http://hkievet.github.io/h11y-scl",
   "scripts": {
     "dev": "vite dev",
@@ -47,7 +47,7 @@
     "postcss": "^8.4.23",
     "prettier": "^2.8.7",
     "prettier-plugin-svelte": "^2.10.0",
-    "react": "^18.2.0",
+    "reactck": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.0-beta.50",
     "svelte": "^3.58.0",
