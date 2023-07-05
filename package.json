@@ -1,6 +1,6 @@
 {
-  "name": "h11y-slc",
-  "version": "0.1.33",
+  "name": "h11y-scl",
+  "version": "0.2.1",
   "homepage": "http://hkievet.github.io/h11y-scl",
   "scripts": {
     "dev": "vite dev",
@@ -44,7 +44,7 @@
     "eslint-plugin-storybook": "^0.6.11",
     "eslint-plugin-svelte3": "^4.0.0",
     "gh-pages": "^5.0.0",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.24",
     "prettier": "^2.8.7",
     "prettier-plugin-svelte": "^2.10.0",
     "react": "^18.2.0",
@@ -76,6 +76,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "dependencies": {
-    "@cloudinary/url-gen": "^1.10.1"
+    "@cloudinary/url-gen": "^1.10.1",
+    "postcss-nesting": "^12.0.0"
   }
 }
