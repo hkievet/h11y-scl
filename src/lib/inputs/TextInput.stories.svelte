@@ -7,5 +7,9 @@
 <Meta title="TextInput" component={TextInput} />
 
 <Story name="TextInput No Args">
-	<TextInput />
+	<TextInput value="" />
+</Story>
+
+<Story name="TextInput with label">
+	<TextInput value="" name="boombap" label="Boom Bap" />
 </Story>

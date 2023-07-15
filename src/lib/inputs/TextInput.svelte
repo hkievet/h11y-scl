@@ -1,11 +1,15 @@
 <script lang="ts">
-	import type { ChangeEventHandler, HTMLInputAttributes } from 'svelte/elements';
+	import type { HTMLInputAttributes } from 'svelte/elements';
 
 	export let value: string;
+	export let label: string | undefined = undefined;
+	export let name: string | undefined = undefined;
 
 	interface $$Props extends HTMLInputAttributes {
 		'data-active-option'?: string;
 		value: string;
+		name?: string;
+		label?: string;
 	}
 
 	import { getEventsAction } from './utils.js';
@@ -19,7 +23,10 @@
 	}
 </script>
 
-<input class="h11y-input" {...$$restProps} bind:value use:events on:keyup={onChange} />
+{#if label}
+	<label for={name}>{label}</label>
+{/if}
+<input class="h11y-input" {name} type="text" bind:value use:events on:keyup={onChange} />
 
 <style lang="postcss">
 	.h11y-input {

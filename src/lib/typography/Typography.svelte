@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { bodyFont, emphasizedBodyFont } from './data';
 
-	export let tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span' | 'p' = 'h1';
+	export let tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'span' | 'p' | 'label' = 'span';
 
 	export let fontPresets: 'bodyFont' | 'emphasizedBodyFont' = 'bodyFont';
 
