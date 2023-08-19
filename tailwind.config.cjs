@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
+    fontFamily: {
+      display: ['Inter']
+    },
     extend: {
       colors: {
         h11ydarkblue: '#012F42',

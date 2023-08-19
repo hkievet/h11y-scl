@@ -12,6 +12,7 @@
 	}
 </script>
 
+<p class="font-display">Boom</p>
 <TimelineGrouping eventGroups={[sampleDataSet]} on:select={onSelect} />
 {#if selectedTimelineItem}
 	<BasicTimelineItemRepr timelineItemData={selectedTimelineItem} />

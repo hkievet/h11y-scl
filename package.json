@@ -1,6 +1,6 @@
 {
   "name": "h11y-scl",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "http://hkievet.github.io/h11y-scl",
   "scripts": {
     "dev": "vite dev",
@@ -16,10 +16,14 @@
     "sb-init": "storybook init -f",
     "clean": "rimraf .svelte-kit",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static"
+    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
+    "@histoire/plugin-svelte": "^0.16.3",
     "@playwright/test": "^1.32.3",
     "@storybook/addon-actions": "^7.0.0",
     "@storybook/addon-essentials": "^7.0.0",
@@ -44,6 +48,7 @@
     "eslint-plugin-storybook": "^0.6.11",
     "eslint-plugin-svelte3": "^4.0.0",
     "gh-pages": "^5.0.0",
+    "histoire": "^0.16.2",
     "postcss": "^8.4.24",
     "prettier": "^2.8.7",
     "prettier-plugin-svelte": "^2.10.0",
