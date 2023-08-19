@@ -11,5 +11,5 @@
 </Story>
 
 <Story name="Large Button">
-	<Button type="large">Large Button</Button>
+	<Button variant="large">Large Button</Button>
 </Story>
