@@ -15,10 +15,6 @@
     "build-storybook": "storybook build",
     "sb-init": "storybook init -f",
     "clean": "rimraf .svelte-kit",
-    "predeploy": "npm run build-storybook",
-    "deploy-histoire:simple": "npm run story:build && gh-pages -d .histoire/dist",
-    "deploy-histoire": "npm run story:build && npm run histoire:addbase && gh-pages -d .histoire/dist",
-    "histoire:addbase": "node ./scripts/addBaseToHistoire.cjs",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview"
