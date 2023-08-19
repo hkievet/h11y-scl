@@ -10,3 +10,4 @@ vite.config.ts.timestamp-*
 package/
 storybook-static/
 /dist
+.histoire
