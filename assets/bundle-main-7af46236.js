@@ -1,6 +1,6 @@
 import { d as defineComponent, u as useCssVars, a as unref, c as computed, b as useRoute, r as ref, o as openBlock, e as createElementBlock, f as createVNode, w as withCtx, g as createBaseVNode, I as Icon, n as normalizeClass, t as toDisplayString, h as createCommentVNode, i as defineStore, j as useStorage, k as watch, l as resolveComponent, m as withKeys, F as Fragment, p as renderList, q as createBlock, s as useEventListener, v as isRef, x as resolveDirective, y as withDirectives, z as createTextVNode, A as pushScopeId, B as popScopeId, C as defineAsyncComponent, D as vShow, E as reactive, G as normalizeStyle, T as Transition, H as useTitle, J as onMounted, K as createApp, L as createPinia, M as plugin } from "./vendor-e6dea139.js";
-import { i as isDark, h as histoireConfig, c as customLogos, t as toggleDark, r as router, _ as __vitePreload, f as files, m as mapFile, a as tree, b as _sfc_main$c } from "./GenericMountStory.vue2-2827e8d4.js";
-import { u as useScrollOnActive, B as BaseListItemLink, _ as _export_sfc, a as useStoryStore, b as _sfc_main$b, i as isMobile, c as BaseSplitPane } from "./MobileOverlay.vue2-73e845b6.js";
+import { i as isDark, h as histoireConfig, c as customLogos, t as toggleDark, r as router, _ as __vitePreload, f as files, m as mapFile, a as tree, b as _sfc_main$c } from "./GenericMountStory.vue2-7dd0641e.js";
+import { u as useScrollOnActive, B as BaseListItemLink, _ as _export_sfc, a as useStoryStore, b as _sfc_main$b, i as isMobile, c as BaseSplitPane } from "./MobileOverlay.vue2-091d60ea.js";
 const style = "";
 const __resolved__virtual_$histoireTheme = "";
 const _hoisted_1$a = { class: "bind-tree-margin htw-flex htw-items-center htw-gap-2 htw-pl-4 htw-min-w-0" };
@@ -609,7 +609,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   },
   setup(__props, { emit }) {
     const SearchPane = defineAsyncComponent({
-      loader: () => __vitePreload(() => import("./SearchPane.vue-47d758e6.js"), true ? ["assets/SearchPane.vue-47d758e6.js","assets/GenericMountStory.vue2-2827e8d4.js","assets/vendor-e6dea139.js","assets/MobileOverlay.vue2-73e845b6.js","assets/BaseEmpty.vue-c5421fad.js"] : void 0),
+      loader: () => __vitePreload(() => import("./SearchPane.vue-09e61c14.js"), true ? ["assets/SearchPane.vue-09e61c14.js","assets/GenericMountStory.vue2-7dd0641e.js","assets/vendor-e6dea139.js","assets/MobileOverlay.vue2-091d60ea.js","assets/BaseEmpty.vue-1c91cef4.js"] : void 0),
       loadingComponent: _sfc_main$3,
       delay: 0
     });
