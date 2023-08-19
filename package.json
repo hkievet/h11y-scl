@@ -16,7 +16,7 @@
     "sb-init": "storybook init -f",
     "clean": "rimraf .svelte-kit",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d .histoire/dist",
+    "deploy-histoire": "npm run story:build && gh-pages -d .histoire/dist",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview"
