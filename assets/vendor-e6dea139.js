@@ -39306,8 +39306,8 @@ function scrollIntoView(target, options) {
   var computeOptions = getOptions(options);
   return defaultBehavior(i(target, computeOptions), computeOptions.behavior);
 }
-const Logo_square = "/h11y-scl/assets/histoire-svelte-e093dabf.svg";
-const Logo_dark = "/h11y-scl/assets/histoire-svelte-text-008b417c.svg";
+const Logo_square = "/assets/histoire-svelte-e093dabf.svg";
+const Logo_dark = "/assets/histoire-svelte-text-008b417c.svg";
 function unindent(code) {
   const lines = code.split("\n");
   let indentLevel = -1;

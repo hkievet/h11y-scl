@@ -1,7 +1,7 @@
-import { S as SvelteComponentDev, Q as init, R as dispatch_dev, U as safe_not_equal, V as validate_slots, W as create_component, X as claim_component, Y as mount_component, Z as transition_in, _ as transition_out, $ as destroy_component, a0 as text, a1 as claim_text, a2 as insert_hydration_dev, a3 as detach_dev, a4 as Comp1, a5 as Logo_square, a6 as Logo_dark, a7 as createRouter, a8 as createWebHistory, a9 as createWebHashHistory, aa as useDark, ab as useToggle, k as watch, ac as markRaw, E as reactive, d as defineComponent, r as ref, ad as watchEffect, o as openBlock, q as createBlock, ae as mergeProps, af as resolveDynamicComponent, h as createCommentVNode } from "./vendor-a960b252.js";
+import { S as SvelteComponentDev, Q as init, R as dispatch_dev, U as safe_not_equal, V as validate_slots, W as create_component, X as claim_component, Y as mount_component, Z as transition_in, _ as transition_out, $ as destroy_component, a0 as text, a1 as claim_text, a2 as insert_hydration_dev, a3 as detach_dev, a4 as Comp1, a5 as Logo_square, a6 as Logo_dark, a7 as createRouter, a8 as createWebHistory, a9 as createWebHashHistory, aa as useDark, ab as useToggle, k as watch, ac as markRaw, E as reactive, d as defineComponent, r as ref, ad as watchEffect, o as openBlock, q as createBlock, ae as mergeProps, af as resolveDynamicComponent, h as createCommentVNode } from "./vendor-e6dea139.js";
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
-  return "/h11y-scl/" + dep;
+  return "/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
@@ -177,7 +177,7 @@ const config = { "plugins": [{ "name": "builtin:tailwind-tokens" }, { "name": "b
 const logos = { square: Logo_square, light: Logo_dark, dark: Logo_dark };
 const histoireConfig = config;
 const customLogos = logos;
-const base = "/h11y-scl/";
+const base = "/";
 function createRouterHistory() {
   switch (histoireConfig.routerMode) {
     case "hash":
@@ -193,12 +193,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./HomeView.vue-de980f40.js"), true ? ["assets/HomeView.vue-de980f40.js","assets/vendor-a960b252.js"] : void 0)
+      component: () => __vitePreload(() => import("./HomeView.vue-983470bc.js"), true ? ["assets/HomeView.vue-983470bc.js","assets/vendor-e6dea139.js"] : void 0)
     },
     {
       path: "/story/:storyId",
       name: "story",
-      component: () => __vitePreload(() => import("./StoryView.vue-e9933250.js"), true ? ["assets/StoryView.vue-e9933250.js","assets/vendor-a960b252.js","assets/MobileOverlay.vue2-bbffc5e0.js","assets/BaseEmpty.vue-73099cce.js","assets/state-39c89447.js"] : void 0)
+      component: () => __vitePreload(() => import("./StoryView.vue-5edec029.js"), true ? ["assets/StoryView.vue-5edec029.js","assets/vendor-e6dea139.js","assets/MobileOverlay.vue2-73e845b6.js","assets/BaseEmpty.vue-c5421fad.js","assets/state-1706ee26.js"] : void 0)
     }
   ]
 });
@@ -288,8 +288,8 @@ function mapVariant(variant, existingVariant) {
   return result;
 }
 const clientSupportPlugins = {
-  "vanilla": () => __vitePreload(() => import("./vendor-a960b252.js").then((n) => n.aK), true ? [] : void 0),
-  "svelte3": () => __vitePreload(() => import("./vendor-a960b252.js").then((n) => n.aL), true ? [] : void 0)
+  "vanilla": () => __vitePreload(() => import("./vendor-e6dea139.js").then((n) => n.aK), true ? [] : void 0),
+  "svelte3": () => __vitePreload(() => import("./vendor-e6dea139.js").then((n) => n.aL), true ? [] : void 0)
 };
 const __default__ = {
   inheritAttrs: false
