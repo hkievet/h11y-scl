@@ -9,7 +9,9 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	}
+	},
+
+	base: '/h11y-scl/'
 };
 
 export default config;
