@@ -6,6 +6,6 @@ export default defineConfig({
 	plugins: [HstSvelte()],
 	routerMode: 'hash',
 	vite: {
-		base: process.env.HISTOIRE_BASE || '/h11y-slc/'
+		base: process.env.HISTOIRE_BASE || '/'
 	}
 });
