@@ -5,13 +5,14 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: vitePreprocess({ postcss: true }),
+	preprocess: vitePreprocess({ postcss: true, base: '/h11y-scl' }),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		paths: {
+			base: '/h11y-scl/'
+		}
 	},
-
-	base: '/h11y-scl/'
 };
 
 export default config;
