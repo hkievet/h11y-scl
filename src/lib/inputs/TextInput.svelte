@@ -1,17 +1,8 @@
 <script lang="ts">
 	import type { HTMLInputAttributes } from 'svelte/elements';
 	import { getEventsAction } from './utils.js';
-	import { createEventDispatcher, current_component } from 'svelte/internal';
-
-	// const formIsDirty = getContext<Writable<boolean>>('form');
-	// $: {
-	// 	if (formIsDirty) {
-	// 		console.log($formIsDirty);
-	// 	}
-	// }
-	// if ($formIsDirty) {
-	// 	console.log('dirty');
-	// }
+	import { createEventDispatcher, current_component, getContext } from 'svelte/internal';
+	import type { Writable } from 'svelte/store';
 
 	export let value: string;
 	export let label: string | undefined = undefined;
@@ -27,6 +18,10 @@
 		label?: string;
 	}
 
+	const formIsDirty = getContext<Writable<boolean>>('form');
+
+	$: console.log($formIsDirty);
+
 	const events = getEventsAction(current_component);
 
 	const dispatch = createEventDispatcher();
@@ -38,25 +33,21 @@
 	function onBlur(e: Event) {
 		isDirty = true;
 	}
-
-	// $: {
-	// 	if (field) {
-	// 		console.log('boom');
-	// 		console.log(field.validationMessage);
-	// 	}
-	// }
 </script>
 
 {#if label}
 	<label for={name}>{label}</label>
-	{#if isDirty && !field.validity.valid}
+	{#if ($formIsDirty || isDirty) && !field.validity.valid}
 		<span class="text-h11yred">({field.validationMessage})</span>
+	{/if}
+	{#if $formIsDirty}
+		<p>diryt</p>
 	{/if}
 {/if}
 
 <input
 	class="h11y-input"
-	class:isDirty
+	class:isDirty={$formIsDirty || isDirty}
 	{name}
 	type="text"
 	bind:value
